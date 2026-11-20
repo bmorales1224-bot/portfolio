@@ -10,6 +10,13 @@
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://brianmorales.pro/">
 <link rel="canonical" href="https://brianmorales.pro/">
+<meta property="og:image" content="https://brianmorales.pro/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
@@ -143,6 +150,24 @@ nav .btn{min-height:38px;padding:0 14px;font-size:14px}
 
 .reg{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:22px}.reg span{font-weight:700;font-size:14px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);color:var(--gold2);background:rgba(212,168,74,.08)}.reg .rl{border:0;background:none;color:var(--mute);padding-left:0}
 .ccta{flex-direction:column;align-items:flex-end}@media(max-width:860px){.ccta{align-items:flex-start}}
+.creds{max-width:1200px;margin:18px auto 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center}
+.creds span{font-size:13.5px;font-weight:700;color:#e8eef7;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+.creds .cl{border:0;background:none;color:var(--gold2);padding:5px 4px}
+.cases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.cs{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 26px 22px;display:flex;flex-direction:column}
+.cs.wide{grid-column:1/-1}
+.cs .tag{font-family:Montserrat;font-weight:700;font-size:13px;color:var(--gold2)}
+.cs h3{font-size:clamp(21px,2.2vw,25px);color:#fff;margin:6px 0 14px}
+.cs dl{margin:0;display:grid;gap:10px}
+.cs dt{font-family:Montserrat;font-weight:700;font-size:12.5px;color:var(--gold2);letter-spacing:.04em}
+.cs dd{margin:2px 0 0;color:#dbe4f1;font-size:15.5px}
+.cs .res{margin-top:auto;padding-top:16px;display:flex;flex-wrap:wrap;gap:10px}
+.cs .res span{background:rgba(212,168,74,.12);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:14px;color:#fff;font-weight:600}
+.cs .res b{font-family:Montserrat;color:var(--gold2);font-size:18px;margin-right:4px}
+.lead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:clamp(24px,4vw,56px);align-items:center;margin-bottom:clamp(32px,4vw,48px)}
+.lead blockquote{margin:0;font-size:clamp(19px,2vw,23px);line-height:1.55;color:#eef2f8;border-left:4px solid var(--gold);padding-left:24px}
+.lead .sig{margin-top:14px;padding-left:28px;color:var(--gold2);font-family:Montserrat;font-weight:700}
+@media (max-width:860px){.cases,.lead{grid-template-columns:minmax(0,1fr)}}
 /* testimonials */
 .quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .q{background:var(--cream);color:var(--cink);border-radius:16px;padding:26px 26px 22px;border-top:4px solid var(--gold);display:flex;flex-direction:column;justify-content:space-between}
@@ -193,7 +218,7 @@ footer b{font-family:Montserrat;color:#fff;letter-spacing:.02em}
   <div class="wrap">
     <a class="brand" href="#top">Brian <span>Morales</span></a>
     <div class="links">
-      <a href="#impact">Impact</a><a href="#experience">Experience</a><a href="#ma">M&amp;A</a><a href="#product">Product Delivery</a><a href="#results">Results</a><a href="#leadership">Leadership</a><a href="#career">Career</a>
+      <a href="#impact">Impact</a><a href="#experience">Experience</a><a href="#ma">M&amp;A</a><a href="#cases">Case Studies</a><a href="#product">Product Delivery</a><a href="#results">Results</a><a href="#leadership">Leadership</a><a href="#career">Career</a>
     </div>
     <a class="btn gold" href="#connect">Connect</a>
   </div>
@@ -205,7 +230,7 @@ footer b{font-family:Montserrat;color:#fff;letter-spacing:.02em}
     <div>
       <div class="kicker">Executive leadership portfolio</div>
       <h1>Brian Morales</h1>
-      <div class="role">Technology Executive<i>|</i>Infrastructure &amp; Operations<i>|</i>M&amp;A Integration</div>
+      <div class="role">Senior Director / VP of IT<i>|</i>Infrastructure &amp; Operations<i>|</i>Acting CTO</div>
       <p class="pos">The technology leader organizations trust when the business is <b>changing hands</b>, <b>changing platforms</b>, or <b>can't afford to go down</b>.</p>
       <div class="snap">
         <span><b>Acting CTO</b> · Aptarro</span>
@@ -216,7 +241,8 @@ footer b{font-family:Montserrat;color:#fff;letter-spacing:.02em}
       </div>
       <div class="cta">
         <a class="btn gold" href="https://www.linkedin.com/in/brian-morales-462b535/">Connect on LinkedIn</a>
-        <a class="btn ghost" href="#ma">View case studies</a>
+        <a class="btn ghost" href="#cases">View case studies</a>
+        <a class="btn ghost" href="Brian-Morales-Executive-Portfolio.pdf" download>Download portfolio (PDF)</a>
       </div>
     </div>
   </div>
@@ -231,6 +257,7 @@ footer b{font-family:Montserrat;color:#fff;letter-spacing:.02em}
     <div class="m"><div class="v">64<em>→</em>81%</div><div class="k">SLA attainment</div><div class="s">KROGER</div></div>
     <div class="m"><div class="v">77<em>→</em>96%</div><div class="k">Team retention</div><div class="s">DELL</div></div>
   </div>
+  <div class="creds" aria-label="Certifications"><span class="cl">Certified</span><span>PMP</span><span>ITIL Foundation</span><span>CompTIA Security+</span><span>SAFe</span><span>Prosci ADKAR</span><span>SIAM</span><span>HIPAA Security</span><span>Lean Six Sigma</span><span class="cl">B.S., IT Management</span></div>
 </header>
 
 <main id="main">
@@ -251,7 +278,7 @@ footer b{font-family:Montserrat;color:#fff;letter-spacing:.02em}
       <article class="co role"><h3>Fortis Payment Systems</h3><div class="ind">Payments · PE-backed</div><div class="rev">Head of Technology<small>Senior IT Manager → Acting VP of IT</small></div>
         <p>2021–2023. Led the IT organization throughout, with a ~$5M direct budget and P&amp;L / EBITDA accountability. Chaired M&amp;A technology due diligence, built ITIL service operations from scratch and governed PCI DSS.</p></article>
       <article class="co role"><h3>Synergy Technical Solutions</h3><div class="ind">Managed Services · 2013–2015</div><div class="rev">Senior Director of IT</div>
-        <p>Head of technology reporting to the CEO. Owned managed-services P&amp;L and IT budgets, data center operations and 60+ vendor field technicians.</p></article>
+        <p>Head of technology reporting to the CEO, brought in to modernize the company's IT. Owned managed-services P&amp;L and IT budgets and rebuilt service operations for a nationwide field-service business.</p></article>
     </div>
     <p class="also"><b>Also:</b> Medco / Liberty Medical (2005–2013) · Dell (2001–2005)</p>
     <p class="fn">*Public company revenue is shown for scale only and is not revenue personally managed. Location and clinic counts reflect the period of tenure.</p>
@@ -291,6 +318,50 @@ footer b{font-family:Montserrat;color:#fff;letter-spacing:.02em}
   </div>
 </section>
 
+<section class="band" id="cases">
+  <div class="wrap">
+    <div class="head"><span class="ey">Case studies</span><h2>Problems solved, start to finish</h2>
+      <p>Five situations where the business needed technology to work under pressure, and what changed as a result.</p></div>
+    <div class="cases">
+      <article class="cs">
+        <div class="tag">Aptarro · Data center relocation</div>
+        <h3>Rescuing a relocation that had failed twice</h3>
+        <dl><div><dt>CHALLENGE</dt><dd>A Tallahassee-to-Atlanta data center move had stalled after two unsuccessful attempts.</dd></div>
+        <div><dt>WHAT BRIAN DID</dt><dd>Took ownership of the recovery: mapped every dependency, coordinated the cross-team cutover and confirmed failover readiness before the move.</dd></div></dl>
+        <div class="res"><span><b>3 days</b>vs. 5 planned</span><span><b>Zero</b>downtime</span></div>
+      </article>
+      <article class="cs">
+        <div class="tag">Kroger · Service operations</div>
+        <h3>Turning around a 60-person service operation</h3>
+        <dl><div><dt>CHALLENGE</dt><dd>About 8,000 tickets a month and only 64% of service-level targets met, across pharmacies, clinics and distribution centers.</dd></div>
+        <div><dt>WHAT BRIAN DID</dt><dd>Led a ServiceNow modernization with engineering: re-engineered monitoring, assignment and SLA ownership, added self-healing automation, and set 5-5-5 escalation discipline for major incidents.</dd></div></dl>
+        <div class="res"><span><b>−25%</b>tickets</span><span><b>64→81%</b>SLA met</span><span><b>−15%</b>incidents</span><span><b>+20%</b>triage efficiency</span></div>
+      </article>
+      <article class="cs">
+        <div class="tag">Florida Power &amp; Light · Emergency response</div>
+        <h3>Keeping outage data flowing through hurricanes</h3>
+        <dl><div><dt>CHALLENGE</dt><dd>During hurricanes and declared disasters, restoration crews and agencies depend on outage systems to prioritize hospitals, water infrastructure and medically vulnerable customers.</dd></div>
+        <div><dt>WHAT BRIAN DID</dt><dd>Served in emergency operations centers as Emergency Response Coordinator, keeping outage information systems running and coordinating restoration visibility with FEMA, municipalities and agencies.</dd></div></dl>
+        <div class="res"><span><b>Statewide</b>revenue-critical grid systems</span><span><b>~30%</b>field-support efficiency</span></div>
+      </article>
+      <article class="cs">
+        <div class="tag">Aptarro · Regulated healthcare data</div>
+        <h3>Secure health-record exchange with government agencies</h3>
+        <dl><div><dt>CHALLENGE</dt><dd>New government contracts required exchanging electronic health records with agencies inside a FISMA High environment, the strictest federal security standard.</dd></div>
+        <div><dt>WHAT BRIAN DID</dt><dd>Directed the infrastructure for secure ingestion, visibility and return of EHR data, with executive oversight of annual recertification, audits, penetration-test reviews and continuous monitoring.</dd></div></dl>
+        <div class="res"><span><b>FISMA High</b>environment</span><span><b>New</b>government contracts supported</span></div>
+      </article>
+      <article class="cs wide">
+        <div class="tag">Synergy Technical Solutions · IT modernization</div>
+        <h3>Modernizing a nationwide field-service company, reporting to the CEO</h3>
+        <dl><div><dt>CHALLENGE</dt><dd>A field-service business whose outages cost an estimated $2,500–$5,000 every 15 minutes was running on manual ticketing, an aging CRM and an outdated backup environment.</dd></div>
+        <div><dt>WHAT BRIAN DID</dt><dd>As head of technology, rebuilt the customer ticketing workflow with macros, canned responses and a service catalog that surfaced each customer's history the moment a technician started typing; introduced runbooks and a CMDB; partnered with the CEO and contracted engineers on CRM and field-dispatch modernization through weekly build-and-feedback reviews; and modernized the Dell backup environment.</dd></div></dl>
+        <div class="res"><span><b>12–15%</b>more efficient ticket handling</span><span><b>~14%</b>faster field tickets</span><span><b>~7 min</b>shorter customer calls</span><span><b>60+</b>field technicians coordinated</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="band" id="product">
   <div class="wrap prod">
     <div>
@@ -326,6 +397,10 @@ footer b{font-family:Montserrat;color:#fff;letter-spacing:.02em}
 
 <section class="band" id="leadership">
   <div class="wrap">
+    <div class="lead">
+      <div class="head" style="margin:0"><span class="ey">How I lead</span><h2>People first, results always</h2></div>
+      <div><blockquote>I believe technology leadership is people leadership first. My job is to clear the path for my teams, set a high bar, and make sure every person understands how their work moves the business. I take ownership when things go wrong, give credit when they go right, and stay calm and decisive when systems are down and the pressure is on. I measure success two ways: results the business can see, and people who grow into leaders themselves.</blockquote><div class="sig">Brian Morales</div></div>
+    </div>
     <div class="head"><span class="ey">Five executive leadership pillars</span><h2>Where Brian creates value</h2></div>
     <div class="pillars">
       <div class="p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 9.5 4 4 0 0 1 17.5 18Z"/></svg><h3>Enterprise Infrastructure &amp; Modernization</h3><p>Cloud, data centers, virtualization, enterprise architecture and technical-debt reduction.</p></div>
@@ -364,7 +439,7 @@ footer b{font-family:Montserrat;color:#fff;letter-spacing:.02em}
       <li><div class="org">Fortis Payment Systems<small>2021 – 2023</small></div><div class="what"><b>Senior IT Manager; Acting VP of IT / Head of Technology.</b> Led the IT organization throughout, with a ~$5M budget and P&amp;L / EBITDA accountability.</div></li>
       <li><div class="org">AutoNation<small>2020 – 2021</small></div><div class="what"><b>Manager, IT Service Management &amp; Support.</b> Enterprise IT across 300+ dealerships and service centers.</div></li>
       <li><div class="org">Florida Power &amp; Light<small>2015 – 2020</small></div><div class="what"><b>IT Support Manager; Emergency Response Coordinator.</b> Revenue-critical grid applications and hurricane emergency operations.</div></li>
-      <li><div class="org">Synergy Technical Solutions<small>2013 – 2015</small></div><div class="what"><b>Senior Director of IT / Head of Technology.</b> Reported to the CEO; owned managed-services P&amp;L.</div></li>
+      <li><div class="org">Synergy Technical Solutions<small>2013 – 2015</small></div><div class="what"><b>Senior Director of IT / Head of Technology.</b> Reported to the CEO; owned managed-services P&amp;L and led IT modernization.</div></li>
       <li><div class="org">Medco / Liberty Medical<small>2005 – 2013</small></div><div class="what"><b>Manager, Technology Services.</b> Infrastructure, security and M&amp;A integration for ~32,000 users.</div></li>
       <li><div class="org">Dell<small>2001 – 2005</small></div><div class="what"><b>Technical Support Manager.</b> Led 45 technicians; raised retention from 77% to 96%.</div></li>
       <li><div class="org">Education &amp; credentials<small>U.S. Army Veteran</small></div><div class="what"><b>B.S., Information Technology Management</b>, University of Sheffield. PMP · ITIL Foundation · CompTIA Security+ · SAFe · Prosci ADKAR · SIAM · HIPAA Security · Kaizen Green Belt · Lean Six Sigma Yellow Belt.</div></li>
@@ -376,7 +451,7 @@ footer b{font-family:Montserrat;color:#fff;letter-spacing:.02em}
   <div class="wrap connect">
     <div><h2>Let's talk about what your organization needs next</h2>
       <p>Open to Director, Senior Director, VP and CTO-level leadership in infrastructure, operations and technology transformation.</p></div>
-    <div class="cta ccta"><a class="btn gold" href="https://www.linkedin.com/in/brian-morales-462b535/">Connect on LinkedIn</a><a class="btn ghost" href="mailto:bmorales1224@gmail.com">bmorales1224@gmail.com</a></div>
+    <div class="cta ccta"><a class="btn gold" href="https://www.linkedin.com/in/brian-morales-462b535/">Connect on LinkedIn</a><a class="btn ghost" href="mailto:bmorales1224@gmail.com">bmorales1224@gmail.com</a><a class="btn ghost" href="Brian-Morales-Executive-Portfolio.pdf" download>Download portfolio (PDF)</a></div>
   </div>
 </section>
 
