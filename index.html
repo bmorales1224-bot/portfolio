@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brian Morales | Executive Portfolio</title>
+<meta name="description" content="Brian Morales: Senior Director and Acting CTO in IT infrastructure, operations and M&A integration. 25 years across healthcare, utilities, retail and payments. U.S. Army Veteran.">
+<meta property="og:title" content="Brian Morales | Executive Leadership Portfolio">
+<meta property="og:description" content="The technology leader organizations trust when the business is changing hands, changing platforms, or can't afford to go down.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://brianmorales.pro/">
+<link rel="canonical" href="https://brianmorales.pro/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+/* VOICE: executive, confident, factual; every number tied to its source company.
+   IDEA: an executive briefing book; navy cover, gold rules, results up front.
+   PICTURE: real headshot on navy beside name and positioning; metric strip under it.
+   COLOUR and TYPE: approved navy #0a1a33 and gold #d4a84a, cream cards; Montserrat + Inter.
+   LAYOUT: sticky nav, full-width bands, 1200px content, stacks to one column under 640px. */
+:root{color-scheme:dark;--bg:#0a1a33;--bg2:#0d2142;--panel:#112a50;--panel2:#16345f;--gold:#d4a84a;--gold2:#f0cd7a;--ink:#eef2f8;--mute:#aebbd0;--line:rgba(212,168,74,.32);--cream:#fbf7ee;--cink:#1b2738;--cmute:#56657c}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3,h4{font-family:Montserrat,Inter,sans-serif;margin:0;line-height:1.1;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+a{color:var(--gold2)}
+:focus-visible{outline:3px solid var(--gold2);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1200px;margin:0 auto}
+.band{padding:clamp(48px,6vw,88px) max(5vw,18px)}
+.band.alt{background:var(--bg2)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--gold);color:#0a1a33;padding:10px 14px;border-radius:8px;font-weight:700;z-index:99}
+.skip:focus{left:12px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(8,20,40,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:18px;padding:12px max(5vw,18px);max-width:none}
+.brand{font-family:Montserrat;font-weight:800;color:#fff;text-decoration:none;font-size:17px;white-space:nowrap}
+.brand span{color:var(--gold2)}
+.links{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.links a{flex:none;color:var(--mute);text-decoration:none;font-size:14px;font-weight:600;padding:8px 10px;border-radius:8px}
+.links a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:10px;font-weight:700;text-decoration:none;font-size:15px;white-space:nowrap}
+.btn.gold{background:var(--gold);color:#0a1a33}
+.btn.gold:hover{background:var(--gold2)}
+.btn.ghost{border:1.5px solid var(--gold);color:var(--gold2)}
+.btn.ghost:hover{background:rgba(212,168,74,.12)}
+nav .btn{min-height:38px;padding:0 14px;font-size:14px}
+
+/* hero */
+.hero{background:radial-gradient(900px 500px at 80% -10%,#1f4378 0%,transparent 60%),linear-gradient(170deg,#0c1f3e,#0a1a33 75%);padding:clamp(40px,6vw,80px) max(5vw,18px) clamp(36px,5vw,60px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.photo{border-radius:18px;overflow:hidden;border:2px solid var(--gold);box-shadow:0 20px 50px rgba(0,0,0,.45);aspect-ratio:640/662}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.kicker{font-family:Montserrat;font-weight:700;color:var(--gold2);font-size:14px;letter-spacing:.04em}
+.hero h1{font-size:clamp(44px,7vw,84px);font-weight:800;letter-spacing:-.01em;margin:8px 0 12px;color:#fff}
+.hero .role{font-family:Montserrat;font-weight:700;color:var(--gold2);font-size:clamp(17px,2vw,21px)}
+.hero .role i{font-style:normal;color:rgba(240,205,122,.5);margin:0 8px}
+.pos{font-size:clamp(18px,2.1vw,22px);font-style:italic;color:#dbe4f1;margin:16px 0 20px;max-width:46ch}
+.pos b{font-style:normal;color:#fff}
+.snap{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.snap span{font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);color:#e8eef7}
+.snap span b{color:var(--gold2)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;max-width:1200px;margin:clamp(32px,4vw,48px) auto 0}
+.m{background:linear-gradient(180deg,#14305a,#0f2547);border:1px solid var(--line);border-radius:14px;padding:20px 14px;text-align:center}
+.m .v{font-family:Montserrat;font-weight:800;font-size:clamp(30px,3.6vw,42px);line-height:1;color:#fff;white-space:nowrap}
+.m .v em{font-style:normal;color:var(--gold)}
+.m .k{font-weight:600;margin-top:10px;line-height:1.3;font-size:15px}
+.m .s{font-size:12.5px;color:var(--gold2);font-weight:700;margin-top:6px;letter-spacing:.03em}
+
+/* section heads */
+.head{margin-bottom:clamp(24px,3vw,36px)}
+.head h2{font-size:clamp(30px,3.6vw,44px);color:#fff}
+.head p{color:var(--mute);margin-top:10px;max-width:68ch;font-size:17px}
+.head .ey{display:block;font-family:Montserrat;font-weight:700;color:var(--gold2);font-size:14px;margin-bottom:8px}
+
+/* experience */
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.co{background:var(--cream);color:var(--cink);border-radius:14px;padding:20px 22px;border-top:4px solid var(--gold)}
+.co.role{border-top-color:#2a5fa8}
+.co h3{font-size:21px}
+.co .ind{color:var(--cmute);font-size:14px;font-weight:600;margin-top:2px}
+.co .rev{font-family:Montserrat;font-weight:800;color:#a8791e;font-size:20px;margin-top:12px}
+.co.role .rev{color:#1f4f8f}
+.co .rev small{font-family:Inter;font-weight:600;font-size:13px;color:#7d6a45;margin-left:4px}
+.co.role .rev small{color:var(--cmute)}
+.co p{margin-top:8px;font-size:15px;color:#2b3a50}
+.fn{font-size:13px;color:#8d9db4;font-style:italic;margin-top:16px}
+.also{margin-top:14px;color:var(--mute);font-size:15px}
+.also b{color:#fff}
+
+/* cases */
+.case{border-radius:16px;padding:clamp(22px,3vw,32px)}
+.case{display:flex;flex-direction:column}.case .note{margin-top:auto;padding-top:14px}.case.lt{background:linear-gradient(180deg,#fbf4e2,#f3e6c4);color:var(--cink)}
+.case.dk{background:linear-gradient(180deg,#183a6a,#12305a);border:1px solid var(--line)}
+.case .tag{font-family:Montserrat;font-weight:700;font-size:13px;color:#9a6c12}
+.case.dk .tag{color:var(--gold2)}
+.case h3{font-size:clamp(24px,2.6vw,30px);margin:6px 0 6px}
+.case .sub{font-weight:600;color:#6b5a38}
+.case.dk .sub{color:#c9d5e6}
+.case ul{list-style:none;padding:0;margin:16px 0 0}
+.case li{position:relative;padding-left:28px;margin:10px 0}
+.case li::before{content:"";position:absolute;left:4px;top:7px;width:12px;height:7px;border-left:3px solid #b8862b;border-bottom:3px solid #b8862b;transform:rotate(-45deg)}
+.case.dk li::before{border-color:var(--gold)}
+.note{font-size:14px;font-style:italic;margin-top:14px;color:#6b5a38}
+.case.dk .note{color:#a3b3ca}
+.tl{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:14px}
+.tl span{font-size:14px;font-weight:700;padding:5px 11px;border-radius:8px;background:rgba(255,255,255,.07);border:1px solid var(--line);white-space:nowrap}
+.tl span b{color:var(--gold2);margin-right:5px}
+.tl i{color:var(--gold);font-style:normal}
+
+/* product */
+.prod{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(20px,4vw,48px);align-items:center}
+.counts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.count{background:linear-gradient(180deg,#14305a,#0f2547);border:1px solid var(--line);border-radius:16px;padding:26px 18px;text-align:center}
+.count .v{font-family:Montserrat;font-weight:800;font-size:clamp(48px,6vw,68px);line-height:1;color:var(--gold2)}
+.count .k{font-weight:700;margin-top:8px}
+.steps{display:grid;gap:12px}
+.step{display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;align-items:start;background:var(--panel);border:1px solid rgba(212,168,74,.2);border-radius:12px;padding:14px 16px}
+.step .n{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(212,168,74,.15);color:var(--gold2);font-family:Montserrat;font-weight:800}
+.step h4{font-size:17px;color:#fff}
+.step p{color:var(--mute);font-size:15px;margin-top:3px}
+
+/* results */
+.r{background:linear-gradient(180deg,#163563,#112a50);border:1px solid rgba(212,168,74,.26);border-radius:14px;padding:22px 20px}
+.r .v{font-family:Montserrat;font-weight:800;font-size:clamp(34px,4vw,46px);line-height:1;color:var(--gold2);white-space:nowrap}
+.r .v small{font-size:.48em}
+.r h3{font-size:18px;color:#fff;margin-top:10px;font-family:Inter;font-weight:700}
+.r p{color:var(--mute);font-size:15px;margin-top:5px}
+.r .co-tag{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:700;color:var(--gold2)}
+
+/* pillars */
+.pillars{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.p{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 18px}
+.p svg{width:34px;height:34px;color:var(--gold)}
+.p h3{font-size:17px;color:#fff;margin:12px 0 8px}
+.p p{color:var(--mute);font-size:14.5px}
+
+.reg{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:22px}.reg span{font-weight:700;font-size:14px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);color:var(--gold2);background:rgba(212,168,74,.08)}.reg .rl{border:0;background:none;color:var(--mute);padding-left:0}
+.ccta{flex-direction:column;align-items:flex-end}@media(max-width:860px){.ccta{align-items:flex-start}}
+/* testimonials */
+.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.q{background:var(--cream);color:var(--cink);border-radius:16px;padding:26px 26px 22px;border-top:4px solid var(--gold);display:flex;flex-direction:column;justify-content:space-between}
+.q .th{font-family:Montserrat;font-weight:700;font-size:13px;color:#9a6c12}
+.q blockquote{margin:10px 0 0;font-size:clamp(17px,1.8vw,20px);font-style:italic;line-height:1.5;font-weight:500}
+.q blockquote::before{content:"\201C";font-family:Georgia,serif;font-size:52px;color:var(--gold);line-height:0;vertical-align:-20px;margin-right:4px;font-style:normal}
+.q .who{border-top:1px solid #e3d6b6;margin-top:18px;padding-top:12px}
+.q .who b{font-family:Montserrat;font-size:16px;display:block}
+.q .who span{font-size:14px;color:var(--cmute)}
+.lirow{display:flex;align-items:center;gap:12px;margin-top:20px;color:var(--mute);font-size:15px}
+.lirow .in{background:#0a66c2;color:#fff;font:800 15px Arial,sans-serif;border-radius:5px;padding:3px 7px}
+
+/* career */
+.career{list-style:none;padding:0;margin:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.career li{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:20px;padding:16px 4px;border-bottom:1px solid var(--line)}
+.career .org{font-family:Montserrat;font-weight:700;color:#fff;font-size:17px}
+.career .org small{display:block;font-family:Inter;font-weight:500;font-size:14px;color:var(--mute);margin-top:2px}
+.career .what{color:#dbe4f1}
+.career .what b{color:var(--gold2)}
+
+/* connect */
+.connect{background:linear-gradient(160deg,#173864,#0f2547);border:1px solid var(--line);border-radius:20px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:28px;align-items:center}
+.connect h2{font-size:clamp(28px,3.4vw,40px);color:#fff}
+.connect p{color:#dbe4f1;margin-top:12px;font-size:17px}
+.connect .cta{justify-content:flex-end}
+footer{padding:28px max(5vw,18px);border-top:1px solid var(--line);text-align:center;color:#8d9db4;font-size:14px}
+footer b{font-family:Montserrat;color:#fff;letter-spacing:.02em}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:1060px){.pillars{grid-template-columns:repeat(3,minmax(0,1fr))}.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.grid2,.quotes,.prod,.connect{grid-template-columns:minmax(0,1fr)}.connect .cta{justify-content:flex-start}.links{display:none}}
+@media (max-width:640px){
+ .hero .wrap{grid-template-columns:minmax(0,1fr)}
+ .photo{max-width:240px}
+ .grid3,.pillars{grid-template-columns:minmax(0,1fr)}
+ .career li{grid-template-columns:minmax(0,1fr);gap:4px}
+ nav .btn{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav aria-label="Primary">
+  <div class="wrap">
+    <a class="brand" href="#top">Brian <span>Morales</span></a>
+    <div class="links">
+      <a href="#impact">Impact</a><a href="#experience">Experience</a><a href="#ma">M&amp;A</a><a href="#product">Product Delivery</a><a href="#results">Results</a><a href="#leadership">Leadership</a><a href="#career">Career</a>
+    </div>
+    <a class="btn gold" href="#connect">Connect</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="photo"><img src="brian-morales.jpg" alt="Brian Morales, professional headshot" width="640" height="662"></div>
+    <div>
+      <div class="kicker">Executive leadership portfolio</div>
+      <h1>Brian Morales</h1>
+      <div class="role">Technology Executive<i>|</i>Infrastructure &amp; Operations<i>|</i>M&amp;A Integration</div>
+      <p class="pos">The technology leader organizations trust when the business is <b>changing hands</b>, <b>changing platforms</b>, or <b>can't afford to go down</b>.</p>
+      <div class="snap">
+        <span><b>Acting CTO</b> · Aptarro</span>
+        <span><b>Acting VP of IT</b> · Fortis Payment Systems</span>
+        <span>Board &amp; ELT partner · PE-backed firms</span>
+        <span>Fortune 500 scale · 4 industries</span>
+        <span>★ U.S. Army Veteran</span>
+      </div>
+      <div class="cta">
+        <a class="btn gold" href="https://www.linkedin.com/in/brian-morales-462b535/">Connect on LinkedIn</a>
+        <a class="btn ghost" href="#ma">View case studies</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="metrics" id="impact" aria-label="Executive impact">
+    <div class="m"><div class="v">25</div><div class="k">Years enterprise IT leadership</div></div>
+    <div class="m"><div class="v">~$5M</div><div class="k">IT budget owned, with P&amp;L / EBITDA targets</div><div class="s">FORTIS</div></div>
+    <div class="m"><div class="v">~60</div><div class="k">Person technology organization led</div><div class="s">KROGER · ONSHORE + OFFSHORE</div></div>
+    <div class="m"><div class="v">~2,300</div><div class="k">Pharmacies supported</div><div class="s">KROGER</div></div>
+    <div class="m"><div class="v">300+</div><div class="k">Dealerships &amp; service centers</div><div class="s">AUTONATION</div></div>
+    <div class="m"><div class="v">5 + 4</div><div class="k">Proprietary software + AI initiatives</div><div class="s">CONCEPT → DELIVERY</div></div>
+    <div class="m"><div class="v">64<em>→</em>81%</div><div class="k">SLA attainment</div><div class="s">KROGER</div></div>
+    <div class="m"><div class="v">77<em>→</em>96%</div><div class="k">Team retention</div><div class="s">DELL</div></div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="band" id="experience">
+  <div class="wrap">
+    <div class="head"><span class="ey">Enterprise experience &amp; scale</span><h2>Technology leadership inside some of America's largest operations</h2>
+      <p>Healthcare, retail, critical utility infrastructure, automotive and payments: environments where downtime reaches pharmacies, power restoration and hundreds of storefronts.</p></div>
+    <div class="grid3">
+      <article class="co"><h3>Kroger</h3><div class="ind">Healthcare &amp; Retail</div><div class="rev">$147.6B<small>FY2025 company sales*</small></div>
+        <p>Senior Technology Operations Manager (2023–2026). Led a ~60-person onshore and offshore organization supporting ~2,300 pharmacy and healthcare locations, ~300 clinics and four pharmaceutical distribution centers; influenced $10M+ in technology spend. FISMA High, HIPAA and DEA-regulated operations.</p></article>
+      <article class="co"><h3>Florida Power &amp; Light</h3><div class="ind">Critical Infrastructure · Utility</div><div class="rev">$18.3B<small>FY2025 operating revenue*</small></div>
+        <p>IT Support Manager and Emergency Response Coordinator (2015–2020). Owned reliability of revenue-critical grid and outage applications; led ~40 staff and contractors and served in emergency operations centers with FEMA during hurricanes.</p></article>
+      <article class="co"><h3>AutoNation</h3><div class="ind">Automotive Retail</div><div class="rev">$27.6B<small>FY2025 company revenue*</small></div>
+        <p>Manager, IT Service Management &amp; Support (2020–2021). Directed 25 employees and 60+ vendor field technicians across 300+ locations; chaired the Change Advisory Board and cut ~40 minutes from every field dispatch.</p></article>
+      <article class="co role"><h3>Aptarro</h3><div class="ind">Healthcare RCM SaaS · PE-backed</div><div class="rev">Acting CTO</div>
+        <p>Senior Director, IT Infrastructure &amp; Acting CTO (2026–present). Leads 12 direct and 14 indirect reports with a ~$2M budget and P&amp;L / EBITDA targets; executive oversight of a FISMA High environment; roadmaps with the CEO, CFO and executive team.</p></article>
+      <article class="co role"><h3>Fortis Payment Systems</h3><div class="ind">Payments · PE-backed</div><div class="rev">Head of Technology<small>Senior IT Manager → Acting VP of IT</small></div>
+        <p>2021–2023. Led the IT organization throughout, with a ~$5M direct budget and P&amp;L / EBITDA accountability. Chaired M&amp;A technology due diligence, built ITIL service operations from scratch and governed PCI DSS.</p></article>
+      <article class="co role"><h3>Synergy Technical Solutions</h3><div class="ind">Managed Services · 2013–2015</div><div class="rev">Senior Director of IT</div>
+        <p>Head of technology reporting to the CEO. Owned managed-services P&amp;L and IT budgets, data center operations and 60+ vendor field technicians.</p></article>
+    </div>
+    <p class="also"><b>Also:</b> Medco / Liberty Medical (2005–2013) · Dell (2001–2005)</p>
+    <p class="fn">*Public company revenue is shown for scale only and is not revenue personally managed. Location and clinic counts reflect the period of tenure.</p>
+  </div>
+</section>
+
+<section class="band alt" id="ma">
+  <div class="wrap">
+    <div class="head"><span class="ey">Featured transformation stories</span><h2>Keeping technology steady while ownership changes</h2></div>
+    <div class="grid2">
+      <article class="case lt">
+        <div class="tag">Enterprise M&amp;A integration</div>
+        <h3>Kroger–Albertsons</h3>
+        <div class="sub">$24.6B proposed merger of two of the largest U.S. grocers</div>
+        <ul>
+          <li>Delivered cross-platform integration readiness across grocery, fuel, point-of-sale, pharmacy and enterprise systems.</li>
+          <li>Met integration deliverables on schedule.</li>
+          <li>Separately chaired technology due diligence and integration for multiple healthcare acquisitions each quarter, including EHR and HIPAA-regulated data.</li>
+        </ul>
+        <p class="note">Transaction value is the publicly announced deal value, shown for context. The merger was blocked by court and regulatory action in December 2024.</p>
+      </article>
+      <article class="case dk">
+        <div class="tag">Healthcare M&amp;A · divestitures · carve-outs</div>
+        <h3>Liberty Medical</h3>
+        <div class="sub">2005–2013 · national healthcare supply business</div>
+        <div class="tl" aria-label="Ownership timeline"><span><b>2007</b>Acquired by Medco</span><i>→</i><span><b>2012</b>Express Scripts–Medco</span><i>→</i><span><b>2012</b>Divestiture</span></div>
+        <ul>
+          <li>Chaired technology due diligence and integration for a series of acquisitions and ownership transitions.</li>
+          <li>Consolidated three server farms onto VMware in 10 months, cutting footprint and resource costs ~60%.</li>
+          <li>Rolled out endpoint security across ~32,000 devices and ran SIEM/IDS monitoring and PCI, HIPAA and SOX audits.</li>
+          <li>Led data center relocations; supported business-unit separations and carve-outs across 14 sites in the U.S., Germany and India.</li>
+        </ul>
+        <p class="note">A business with hundreds of millions of dollars in reported annual sales, supporting ~32,000 users.</p>
+      </article>
+    </div>
+    <p class="also" style="margin-top:20px"><b>Fortis Payment Systems:</b> chaired acquisition due diligence and created the company's first M&amp;A technology "Golden Standard" scoring model and checklist.</p>
+  </div>
+</section>
+
+<section class="band" id="product">
+  <div class="wrap prod">
+    <div>
+      <div class="head" style="margin-bottom:22px"><span class="ey">End-to-end product delivery</span><h2>From first idea to working product</h2>
+        <p>Led software engineering, DevOps, database and server teams delivering proprietary software and AI initiatives, with security designed in from the start.</p></div>
+      <div class="counts">
+        <div class="count"><div class="v">5</div><div class="k">Proprietary software initiatives</div></div>
+        <div class="count"><div class="v">4</div><div class="k">AI initiatives</div></div>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><h4>Discovery</h4><p>Business discovery with stakeholders and end users; operational requirements and priorities.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h4>Build</h4><p>Led software engineers and DevOps; supported architecture and delivery decisions across cross-functional teams.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h4>Secure by design</h4><p>Database and server teams delivered data-at-rest encryption, identity and access management, and role-based access control.</p></div></div>
+      <div class="step"><div class="n">4</div><div><h4>Deliver &amp; adopt</h4><p>Testing, UAT, production readiness, implementation and operational adoption.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="results">
+  <div class="wrap">
+    <div class="head"><span class="ey">Operational &amp; financial results</span><h2>Measurable outcomes, documented</h2></div>
+    <div class="grid3">
+      <div class="r"><div class="v">15–20%</div><h3>Technology OpEx reduction</h3><p>Defined monthly technology spend, with over $100K in cumulative savings partly reinvested in modernization.</p><span class="co-tag">APTARRO</span></div>
+      <div class="r"><div class="v">25%</div><h3>Fewer service tickets</h3><p>Monthly volume cut from ~8,000 to ~6,000 through ServiceNow modernization and self-healing automation.</p><span class="co-tag">KROGER</span></div>
+      <div class="r"><div class="v">3 <small>vs</small> 5 <small>days</small></div><h3>Data center migration</h3><p>Recovered a Tallahassee-to-Atlanta relocation that had failed twice, finishing ahead of plan with zero downtime.</p><span class="co-tag">APTARRO</span></div>
+      <div class="r"><div class="v">64TB</div><h3>NAS migration</h3><p>A $1.5M program across seven sites with zero unplanned downtime.</p><span class="co-tag">MEDCO / LIBERTY MEDICAL</span></div>
+      <div class="r"><div class="v">60%</div><h3>Footprint &amp; resource-cost reduction</h3><p>Three server farms consolidated onto VMware in 10 months.</p><span class="co-tag">MEDCO / LIBERTY MEDICAL</span></div>
+      <div class="r"><div class="v">40 <small>min</small></div><h3>Faster on-site arrival, per ticket</h3><p>ServiceNow integrated with the field vendor's ticketing system so dispatches reached technicians instantly.</p><span class="co-tag">AUTONATION</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="leadership">
+  <div class="wrap">
+    <div class="head"><span class="ey">Five executive leadership pillars</span><h2>Where Brian creates value</h2></div>
+    <div class="pillars">
+      <div class="p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 9.5 4 4 0 0 1 17.5 18Z"/></svg><h3>Enterprise Infrastructure &amp; Modernization</h3><p>Cloud, data centers, virtualization, enterprise architecture and technical-debt reduction.</p></div>
+      <div class="p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M8 7h12l-3-3M16 17H4l3 3"/></svg><h3>M&amp;A, Integration &amp; Financial Governance</h3><p>Acquisitions, divestitures, carve-outs, vendor consolidation and OpEx stewardship.</p></div>
+      <div class="p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M9 9l-2 2 2 2M15 9l2 2-2 2M8 21h8"/></svg><h3>Software Delivery &amp; AI Enablement</h3><p>Engineering and DevOps leadership, requirements, UAT and production readiness.</p></div>
+      <div class="p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6Z"/><path d="M9 12l2 2 4-4"/></svg><h3>Cybersecurity &amp; Operational Excellence</h3><p>FISMA High governance, SIEM, endpoint security, IAM/RBAC, ITSM, major-incident leadership and business continuity.</p></div>
+      <div class="p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="8" r="3"/><circle cx="5" cy="10" r="2"/><circle cx="19" cy="10" r="2"/><path d="M7 20a5 5 0 0 1 10 0M1.5 19a3.5 3.5 0 0 1 5-3M22.5 19a3.5 3.5 0 0 0-5-3"/></svg><h3>People Leadership &amp; Development</h3><p>Servant leadership, mentoring, succession planning and high-performing teams.</p></div>
+    </div>
+    <div class="reg"><span class="rl">Regulated environments</span><span>FISMA High</span><span>HIPAA</span><span>PCI DSS</span><span>SOC 2</span><span>SOX</span><span>DEA / GxP</span></div>
+  </div>
+</section>
+
+<section class="band alt" id="testimonials">
+  <div class="wrap">
+    <div class="head"><span class="ey">Leadership through the eyes of others</span><h2>What colleagues and executives say</h2></div>
+    <div class="quotes">
+      <figure class="q" style="margin:0"><div><div class="th">Executive confidence</div><blockquote>I have total confidence in his ability to lead complex IT organizations and drive innovation at the highest level.”</blockquote></div>
+        <figcaption class="who"><b>Scott Schimpf</b><span>CIO, CISO &amp; CTO · Former Direct Manager · Aug 2026</span></figcaption></figure>
+      <figure class="q" style="margin:0"><div><div class="th">Strategic leadership</div><blockquote>He is a strategic thinker that is able to align business and IT strategies in order to identify and define high value opportunities, and design winning IT solutions.”</blockquote></div>
+        <figcaption class="who"><b>Thomas Zaldivar</b><span>Former Colleague · Florida Power &amp; Light · Jul 2020</span></figcaption></figure>
+      <figure class="q" style="margin:0"><div><div class="th">People-first leadership</div><blockquote>Brian took the time to learn the individual strengths and goals of everyone on our team.”</blockquote></div>
+        <figcaption class="who"><b>John McKahan</b><span>Software Release Engineer · Former Colleague · Nov 2026</span></figcaption></figure>
+      <figure class="q" style="margin:0"><div><div class="th">Leadership under pressure</div><blockquote>Brian led the calls, asked the right questions, made quick decisions, and kept everyone focused when the pressure was on.”</blockquote></div>
+        <figcaption class="who"><b>Vandanam Kasukurthi</b><span>Engineering Technical Lead · Former Direct Report · Apr 2026</span></figcaption></figure>
+    </div>
+    <div class="lirow"><span class="in">in</span><span>Selected from 21 recommendations on <a href="https://www.linkedin.com/in/brian-morales-462b535/">LinkedIn</a>.</span></div>
+  </div>
+</section>
+
+<section class="band" id="career">
+  <div class="wrap">
+    <div class="head"><span class="ey">Career overview</span><h2>25 years across enterprise technology</h2></div>
+    <ul class="career">
+      <li><div class="org">Aptarro<small>Jan 2026 – Present</small></div><div class="what"><b>Senior Director, IT Infrastructure; Acting CTO / Head of Technology.</b> Healthcare SaaS infrastructure, Azure modernization, FISMA High oversight, government EHR data exchange and AI delivery.</div></li>
+      <li><div class="org">Kroger Technology &amp; Digital<small>2023 – 2026</small></div><div class="what"><b>Senior Technology Operations Manager.</b> ~60-person organization supporting pharmacy, clinic and distribution operations; Kroger–Albertsons integration readiness.</div></li>
+      <li><div class="org">Fortis Payment Systems<small>2021 – 2023</small></div><div class="what"><b>Senior IT Manager; Acting VP of IT / Head of Technology.</b> Led the IT organization throughout, with a ~$5M budget and P&amp;L / EBITDA accountability.</div></li>
+      <li><div class="org">AutoNation<small>2020 – 2021</small></div><div class="what"><b>Manager, IT Service Management &amp; Support.</b> Enterprise IT across 300+ dealerships and service centers.</div></li>
+      <li><div class="org">Florida Power &amp; Light<small>2015 – 2020</small></div><div class="what"><b>IT Support Manager; Emergency Response Coordinator.</b> Revenue-critical grid applications and hurricane emergency operations.</div></li>
+      <li><div class="org">Synergy Technical Solutions<small>2013 – 2015</small></div><div class="what"><b>Senior Director of IT / Head of Technology.</b> Reported to the CEO; owned managed-services P&amp;L.</div></li>
+      <li><div class="org">Medco / Liberty Medical<small>2005 – 2013</small></div><div class="what"><b>Manager, Technology Services.</b> Infrastructure, security and M&amp;A integration for ~32,000 users.</div></li>
+      <li><div class="org">Dell<small>2001 – 2005</small></div><div class="what"><b>Technical Support Manager.</b> Led 45 technicians; raised retention from 77% to 96%.</div></li>
+      <li><div class="org">Education &amp; credentials<small>U.S. Army Veteran</small></div><div class="what"><b>B.S., Information Technology Management</b>, University of Sheffield. PMP · ITIL Foundation · CompTIA Security+ · SAFe · Prosci ADKAR · SIAM · HIPAA Security · Kaizen Green Belt · Lean Six Sigma Yellow Belt.</div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="connect" style="padding-top:0">
+  <div class="wrap connect">
+    <div><h2>Let's talk about what your organization needs next</h2>
+      <p>Open to Director, Senior Director, VP and CTO-level leadership in infrastructure, operations and technology transformation.</p></div>
+    <div class="cta ccta"><a class="btn gold" href="https://www.linkedin.com/in/brian-morales-462b535/">Connect on LinkedIn</a><a class="btn ghost" href="mailto:bmorales1224@gmail.com">bmorales1224@gmail.com</a></div>
+  </div>
+</section>
+
+</main>
+
+<footer><b>Brian Morales</b> · Strategy · Technology · People · Execution · Measurable Impact</footer>
+
+<script>
+{
+  const els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(es=>{es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('in'),i*60);io.unobserve(e.target)}})},{threshold:.2});
+    els.forEach(el=>io.observe(el));
+  } else els.forEach(el=>el.classList.add('in'));
+}
+</script>
+</body>
+</html>
